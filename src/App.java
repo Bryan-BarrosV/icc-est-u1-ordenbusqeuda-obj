@@ -18,6 +18,12 @@ public class App {
         vC.printArray(personas);
         pC.sortByDireccionCodigo(personas);
         vC.printArray(personas);
+        Persona personaB = pC.findByCodigo(personas, 78);
 
+        if (personaB != null) {
+            System.out.println(personaB);
+        }else{
+            System.out.println("No hay");
+        }
     }
 }
